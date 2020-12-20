@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class PeopleComponent implements OnInit {
   addPerson: boolean;
   addPersonStatus: string;
-  titlePerson = 'Ingeniero';
+  titlePerson = 'Computer Engineer';
 
   constructor() {
     this.addPerson = false;

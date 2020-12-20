@@ -1,18 +1,22 @@
 <div class="container text-center">
   <div class="row">
     <div class="col">
-      <h1>Hello People</h1>
-      <label>Degree person</label>
-      <input type="text" class="form-control" [(ngModel)]="titlePerson" />
-      {{ titlePerson }}
-      <br />
-      <button class="btn btn-primary" [disabled]="!addPerson" (click)="onAddPerson()">
-        Add person
-      </button>
-      <p>{{ addPersonStatus }}</p>
-      <hr />
-      <h3>People list</h3>
-      <app-person></app-person>
+      <h1>People Management</h1>
+      <div class="card">
+        <div class="card-body">
+          <label>Degree person</label>
+          <input type="text" class="form-control" [(ngModel)]="titlePerson" />
+          {{ titlePerson }}
+          <br />
+          <button class="btn btn-primary" [disabled]="!addPerson" (click)="onAddPerson()">
+            Add person
+          </button>
+          <p>{{ addPersonStatus }}</p>
+          <hr />
+          <h3>People list</h3>
+          <app-person></app-person>
+        </div>
+      </div>
     </div>
   </div>
 </div>

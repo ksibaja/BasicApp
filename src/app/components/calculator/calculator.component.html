@@ -1,3 +1,26 @@
-<div class="container">
-  Calculator
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+      <h1>Calculator App</h1>
+      <div class="card">
+        <div class="card-body">
+          <div class="form-row">
+            <div class="col-md-6">
+              <label>Operand 'A'</label>
+              <input type="number" class="form-control" [(ngModel)]="num1" placeholder="Write operand A" />
+            </div>
+            <div class="col-md-6">
+              <label>Operand 'B'</label>
+              <input type="number" class="form-control" [(ngModel)]="num2" placeholder="Write operand B" />
+            </div>
+          </div>
+          <hr>
+          <button class="btn btn-block" (click)="add()">Add</button>
+          <br>
+          <h5>Result: {{ sumResult }}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
