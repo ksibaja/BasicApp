@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "basicapp-a0431": {
+      "hosting": {
+        "first-app": [
+          "basicapp-a0431"
+        ]
+      }
+    }
+  }
+}

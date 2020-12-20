@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CalculatorComponent implements OnInit {
   sumResult: number;
-  num1: number;
-  num2: number;
+  operandA: number;
+  operandB: number;
 
   constructor() { }
 
@@ -16,7 +16,7 @@ export class CalculatorComponent implements OnInit {
   }
 
   add(): void {
-    this.sumResult = this.num1 + this.num2;
+    this.sumResult = this.operandA + this.operandB;
   }
 
 }
