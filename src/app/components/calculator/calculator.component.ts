@@ -15,7 +15,7 @@ export class CalculatorComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  add(): void {
+  onAdd(): void {
     this.sumResult = this.operandA + this.operandB;
   }
 

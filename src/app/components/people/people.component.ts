@@ -1,3 +1,4 @@
+import { Person } from './../../models/person.model';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,12 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PeopleComponent implements OnInit {
   addPerson: boolean;
+  addedPerson: boolean;
   addPersonStatus: string;
   titlePerson = 'Computer Engineer';
 
+  peopleList: Person[] = [
+    new Person('Kervin', 'Sibaja', 22),
+    new Person('Aaron', 'Rojas', 18),
+    new Person('Andrea', 'Arias', 30),
+  ];
+  name: string;
+  lastName: string;
+  age: number;
+
   constructor() {
     this.addPerson = false;
-    this.addPersonStatus = 'No person has been added';
+    this.addedPerson = false;
+    this.addPersonStatus = '';
 
     // enable button after 3 seconds
     setTimeout(() => {
@@ -25,6 +37,10 @@ export class PeopleComponent implements OnInit {
   }
 
   onAddPerson(): void {
+    const person1 = new Person(this.name, this.lastName, this.age);
+    this.peopleList.push(person1);
+
+    this.addedPerson = true;
     this.addPersonStatus = 'Added person';
   }
 

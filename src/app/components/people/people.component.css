@@ -2,10 +2,19 @@ h1 {
   color: teal;
 }
 
+h3 {
+  color: teal;
+}
+
 p {
   color: sandybrown;
 }
 
-h3 {
-  color: teal;
+button {
+  background-color: teal;
+  color: white;
+}
+
+button:hover {
+  color: white;
 }
