@@ -36,18 +36,11 @@
           -->
           <hr />
           <h3>People list</h3>
-          <div>
-            <div class="col-xs-6">
-              <div *ngFor="let person of peopleList; let i = index">
-                <p>
-                  <strong>No.</strong>{{ i+1 }} - <strong>Name:</strong> {{ person.name }} - <strong>Lastname:</strong>
-                  {{ person.lastName }} - <strong>Age:</strong> {{ person.age }}
-                </p>
-
-              </div>
-            </div>
-          </div>
-          <!-- <app-person></app-person> -->
+          <app-person
+            *ngFor="let item of peopleList; let i = index"
+            [person]="item"
+            [index]="i">
+          </app-person>
         </div>
       </div>
       <br>

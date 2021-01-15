@@ -1,6 +1,17 @@
+<div class="col-lg-12">
+  <div style="color: sandybrown;">
+    <strong>No.</strong>{{ index+1 }} - <strong>Name:</strong> {{ person.name }} -
+    <strong>Lastname:</strong>
+    {{ person.lastName }} - <strong>Age:</strong> {{ person.age }}
+    <button type="submit" class="btn btn-info" (click)="emitGreet()">Edit</button>
+  </div>
+</div>
+
+<!--
 <div>
   <p>
     <strong>Name:</strong> {{ name }} --- <strong>Last Name:</strong>
     {{ lastName }} --- <strong>Age:</strong> {{ getAge() }}
   </p>
 </div>
+-->
