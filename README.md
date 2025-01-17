@@ -1,3 +1,6 @@
+# Live App
+https://basicapp-a0431.web.app/home
+
 # FirstApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.7.
